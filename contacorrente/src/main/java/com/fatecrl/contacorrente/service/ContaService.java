@@ -3,11 +3,15 @@ package com.fatecrl.contacorrente.service;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import com.fatecrl.contacorrente.model.Conta;
 
+@Service
 public class ContaService {
     private static List<Conta> contas = new ArrayList<Conta>();
 
+    
     public ContaService() {
         contaFake();
     }
